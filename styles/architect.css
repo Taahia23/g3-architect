@@ -1,0 +1,9 @@
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
