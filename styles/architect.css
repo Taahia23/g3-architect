@@ -11,7 +11,8 @@
     border: 1px solid transparent;
     border-radius: 8px;
     background: #FF900E;
-    margin-bottom: 35px;
+    margin-top: 25px;
+    margin-bottom: 45px;
     color: #FFF;
     text-align: center;
     font-size: 1rem;
@@ -25,7 +26,7 @@
 /* header styles start */
 header {
     background: rgba(255, 144, 14, 0.10);
-    padding: 50px 240px;
+    padding: 50px 150px;
 }
 
 nav {
@@ -37,7 +38,7 @@ nav {
 .nav-title {
     color: #131313;
     font-family: Work Sans;
-    font-size: 2.5rem;
+    font-size: 1.4rem;
     font-weight: 700;
 }
 
@@ -81,7 +82,7 @@ nav li a {
     color: #131313;
     text-align: center;
     font-family: Work Sans;
-    font-size: 4rem;
+    font-size: 3.2rem;
     font-weight: 700;
 }
 
@@ -98,6 +99,62 @@ nav li a {
 
 /* header styles end */
 
+/* main styles */
+.main{
+    width: 1440px;
+    /* height: 1000px;  */
+    display: flex;
+    /* justify-content: center; */
+    margin: 0 auto;
+}
+/* teams styles start */
+.teams-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+.teams-content{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.teams-title{
+    font-size: 2.8rem;
+}
+.quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+.text-features{
+    color: #FF900E;
+    font-weight: 700;
+}
+.teams-description{
+    color: #727272;
+}
+/* teams styles end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* responsive media query */
@@ -107,20 +164,34 @@ nav li a {
     header{
         padding: 15px;
     }
-    nav{
+    nav,
+    .teams-container
+    {
         flex-direction: column;
     }
-    /* nav ul{
-        flex-direction: column;
-    } */
+    .teams-img-container
+    {
+       grid-template-columns: 1fr;
+        
+    }
+    .main{
+        width: 50%;
+        margin: 0;
+    }
 }
 
 /* for tablets or medium devices */
 @media screen and (min-width:576px) and (max-width:992px) {
-    nav{
+    nav,
+    .teams-container
+    {
         flex-direction: column;
     }
     header{
         padding: 45px;
+    }
+    .main{
+        width: 70%;
+        margin: 0 auto;
     }
 }
